@@ -1,6 +1,10 @@
 /**------------------- 
 **      HEADER
 --------------------*/
+header {
+  display: flex;
+  justify-content: center;
+}
 
 /**------------------- 
 **      LOGO
