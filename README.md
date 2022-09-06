@@ -1,6 +1,6 @@
 # Frontend Mentor - Suite Landing Page
 
-![Design preview for the Suite Landing Page coding challenge](./develop/assets/images/desktop-preview.jpg)
+![Design preview for the Suite Landing Page coding challenge](./develop/build/assets/images/preview.jpg)
 
 ## Live Site
 
