@@ -7,7 +7,11 @@ module.exports = function (grunt) {
         options: {
           sourceMap: true,
         },
-        src: ['develop/css/styles.css', 'develop/css/header.css'],
+        src: [
+          'develop/css/styles.css',
+          'develop/css/header.css',
+          'develop/css/hero.css',
+        ],
         dest: 'develop/build/styles.css',
       },
     },

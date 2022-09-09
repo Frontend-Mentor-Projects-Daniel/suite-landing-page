@@ -4,12 +4,15 @@
 .header {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
-/**------------------- 
-**      LOGO
---------------------*/
+@media only screen and (max-width: 18.5625rem) {
+  .header {
+    gap: 0.5rem;
+  }
+}
 
 /**------------------- 
 **  REQUEST BUTTON
