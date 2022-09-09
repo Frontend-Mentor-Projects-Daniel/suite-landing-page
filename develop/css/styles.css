@@ -100,6 +100,9 @@ select {
   /* FONT WEIGHT */
   --fw-regular: 400;
   --fw-bold: 700;
+
+  /* MAX WIDTH */
+  --measure: 43.0625rem;
 }
 
 @media only screen and (min-width: 48em) {
@@ -167,6 +170,63 @@ select {
 /**------------------- 
 **    UTILITIES
 --------------------*/
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.container {
+  padding-inline: 1rem;
+  padding-block-start: 1.5rem;
+}
+
+@media only screen and (min-width: 48em) {
+  .container {
+    padding-inline: 2.4375rem;
+    padding-block-start: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  .container {
+    padding-inline: 10.3125rem;
+    padding-block-start: 3.125rem;
+  }
+}
+
+.center {
+  box-sizing: content-box;
+  margin-inline: auto;
+  max-inline-size: var(--measure);
+}
+
+/**------------------- 
+**    COMPONENTS
+--------------------*/
+/* Buttons */
+.btn {
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: var(--fw-bold);
+  letter-spacing: -0.0088rem;
+  padding: 1rem;
+}
+
+@media only screen and (min-width: 48em) {
+  .btn {
+    font-size: 1rem;
+    letter-spacing: -0.01rem;
+    padding: 1rem 1.2rem;
+  }
+}
 
 /**------------------- 
 **     GENERAL
