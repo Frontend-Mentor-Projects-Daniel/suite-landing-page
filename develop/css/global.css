@@ -20,7 +20,7 @@
   --step-2: clamp(1.44rem, calc(1.28rem + 0.8vw), 2rem);
   --step-3: clamp(1.73rem, calc(1.46rem + 1.34vw), 2.66rem);
   --step-4: clamp(2.07rem, calc(1.65rem + 2.11vw), 3.55rem);
-  --step-5: clamp(2.49rem, calc(1.85rem + 3.21vw), 4.74rem);
+  --step-5: clamp(2.375rem, calc(1.85rem + 2vw), 4.5rem);
 
   /* FLUID SPACE */
   --space-3xs: clamp(0.25rem, calc(0.23rem + 0.09vw), 0.31rem);
@@ -54,6 +54,10 @@
   --measure: 69.375rem;
 }
 
+body {
+  --space: var(--space-2xl-3xl);
+}
+
 h1,
 h2,
 h3,
@@ -67,7 +71,7 @@ p {
 }
 
 h1 {
-  font-size: var(--step-5);
+  font-size: var(--step-4);
   max-width: 16ch;
 }
 
@@ -85,5 +89,11 @@ h4 {
 
 p {
   font-size: var(--step-0);
-  /* max-width: 60ch; */
+  max-width: 43ch;
+}
+
+@media only screen and (min-width: 90em) {
+  p {
+    max-width: 39ch;
+  }
 }
