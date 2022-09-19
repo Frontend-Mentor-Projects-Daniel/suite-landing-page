@@ -1,0 +1,46 @@
+/* for horizontal centering */
+.center {
+  box-sizing: content-box;
+  margin-inline: auto;
+  max-inline-size: var(--measure);
+}
+
+/* for inserting vertical margins between elements that belong to a component */
+.stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.stack > * {
+  margin-block: 0;
+}
+
+.stack > * + * {
+  margin-block-start: var(--space, 1.5rem);
+}
+
+.stack:only-child {
+  block-size: 100%;
+}
+
+.stack > :nth-child(1) {
+  margin-block-end: auto;
+}
+
+/* for switching between a vertical and horizontal layout */
+.switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s1);
+}
+
+.switcher > * {
+  flex-grow: 1;
+  flex-basis: calc((30rem - 100%) * 999);
+}
+
+.switcher > :nth-last-child(n + 5),
+.switcher > :nth-last-child(n + 5) ~ * {
+  flex-basis: 100%;
+}

@@ -1,0 +1,119 @@
+/**------------------- 
+**   TEXT COLOURS
+--------------------*/
+.text-dark {
+  color: hsl(var(--clr-dark), var(--hsla));
+}
+
+.text-dusk {
+  color: hsl(var(--clr-dusk), var(--hsla));
+}
+
+.text-soft-peach {
+  color: hsl(var(--clr-soft-peach), var(--hsla));
+}
+
+.text-desert-storm {
+  color: hsl(var(--clr-desert-storm), var(--hsla));
+}
+
+.text-crocus-purple {
+  color: hsl(var(--clr-crocus-purple), var(--hsla));
+}
+
+.text-pinkish-purple {
+  color: hsl(var(--clr-pinkish-purple), var(--hsla));
+}
+
+.text-light-orange {
+  color: hsl(var(--clr-light-orange), var(--hsla));
+}
+
+/**------------------- 
+**    BG COLOURS
+--------------------*/
+
+.bg-dark {
+  background-color: hsl(var(--clr-dark), var(--hsla));
+}
+
+.bg-dusk {
+  background-color: hsl(var(--clr-dusk), var(--hsla));
+}
+
+.bg-soft-peach {
+  background-color: hsl(var(--clr-soft-peach), var(--hsla));
+}
+
+.bg-desert-storm {
+  background-color: hsl(var(--clr-desert-storm), var(--hsla));
+}
+
+.bg-crocus-purple {
+  background-color: hsl(var(--clr-crocus-purple), var(--hsla));
+}
+
+.bg-pinkish-purple {
+  background-color: hsl(var(--clr-pinkish-purple), var(--hsla));
+}
+
+.bg-light-orange {
+  background-color: hsl(var(--clr-light-orange), var(--hsla));
+}
+
+/**------------------- 
+**  FONT FAMILIES
+--------------------*/
+.ff-epilogue {
+  font-family: 'Epilogue', sans-serif;
+}
+
+/**------------------- 
+**   FONT WEIGHTS
+--------------------*/
+.fw-regular {
+  font-weight: 400;
+}
+.fw-bold {
+  font-weight: 700;
+}
+
+/**------------------- 
+**   LINE HEIGHTS
+--------------------*/
+
+/**------------------- 
+**  LETTER SPACING
+--------------------*/
+
+/**--------------------- 
+** FOR SCREEN READERS
+----------------------*/
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/**------------------- 
+**    CONTAINER
+--------------------*/
+.container {
+  padding-inline: 1rem;
+  padding-block-start: 1.5rem;
+}
+
+/**------------------- 
+**     HEADERS
+--------------------*/
+.header--primary {
+}
+
+.header--primary span {
+}
