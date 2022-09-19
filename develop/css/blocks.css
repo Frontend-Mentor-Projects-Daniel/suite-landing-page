@@ -1,0 +1,46 @@
+/**------------------- 
+**     BUTTONS
+--------------------*/
+.btn {
+  background-color: transparent;
+  border: 2px solid hsl(var(--clr-dark));
+  border-radius: 5px;
+  color: hsl(var(--clr-dark));
+  cursor: pointer;
+  font-size: clamp(0.875rem, calc(0.5rem + 1vw), 1rem);
+  font-weight: var(--fw-bold);
+  letter-spacing: -0.1408px;
+  line-height: 1.5rem;
+  padding: 1em;
+}
+
+.btn:hover {
+  background-color: hsl(var(--clr-dark));
+  color: hsl(var(--clr-desert-storm));
+}
+
+/**------------------- 
+**     HEADER
+--------------------*/
+.header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* once the logo and the button wrap, the design no longer looks nice, this will fix it */
+@media only screen and (max-width: 23.1875rem) {
+  .header {
+    gap: 1rem;
+  }
+
+  .header > * {
+    flex-basis: 100%;
+  }
+
+  .header .image-wrapper {
+    display: grid;
+    place-items: center;
+  }
+}

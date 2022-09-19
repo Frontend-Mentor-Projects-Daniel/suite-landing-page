@@ -51,18 +51,7 @@
   --fw-bold: 700;
 
   /* MAX WIDTH */
-  --measure: 69.25rem;
-}
-
-body {
-  background-color: hsl(var(--clr-desert-storm));
-  font-family: var(--ff-epilogue);
-  font-size: var(--fs-body);
-  font-weight: var(--fw-regular);
-}
-
-.main {
-  margin-top: 3.5rem;
+  --measure: 69.375rem;
 }
 
 h1,

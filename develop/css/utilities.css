@@ -1,64 +1,70 @@
 /**------------------- 
-**   TEXT COLOURS
+**    CONTAINER
 --------------------*/
-.text-dark {
-  color: hsl(var(--clr-dark), var(--hsla));
-}
-
-.text-dusk {
-  color: hsl(var(--clr-dusk), var(--hsla));
-}
-
-.text-soft-peach {
-  color: hsl(var(--clr-soft-peach), var(--hsla));
-}
-
-.text-desert-storm {
-  color: hsl(var(--clr-desert-storm), var(--hsla));
-}
-
-.text-crocus-purple {
-  color: hsl(var(--clr-crocus-purple), var(--hsla));
-}
-
-.text-pinkish-purple {
-  color: hsl(var(--clr-pinkish-purple), var(--hsla));
-}
-
-.text-light-orange {
-  color: hsl(var(--clr-light-orange), var(--hsla));
+.container {
+  padding-inline: var(--space-s-l);
+  padding-block-start: 1.5rem;
 }
 
 /**------------------- 
-**    BG COLOURS
+**     COLOURS
 --------------------*/
-
+/** background */
 .bg-dark {
-  background-color: hsl(var(--clr-dark), var(--hsla));
+  background-color: hsl(var(--clr-dark));
 }
 
 .bg-dusk {
-  background-color: hsl(var(--clr-dusk), var(--hsla));
+  background-color: hsl(var(--clr-dusk));
 }
 
 .bg-soft-peach {
-  background-color: hsl(var(--clr-soft-peach), var(--hsla));
+  background-color: hsl(var(--clr-soft-peach));
 }
 
 .bg-desert-storm {
-  background-color: hsl(var(--clr-desert-storm), var(--hsla));
+  background-color: hsl(var(--clr-desert-storm));
 }
 
 .bg-crocus-purple {
-  background-color: hsl(var(--clr-crocus-purple), var(--hsla));
+  background-color: hsl(var(--clr-crocus-purple));
 }
 
 .bg-pinkish-purple {
-  background-color: hsl(var(--clr-pinkish-purple), var(--hsla));
+  background-color: hsl(var(--clr-pinkish-purple));
 }
 
 .bg-light-orange {
-  background-color: hsl(var(--clr-light-orange), var(--hsla));
+  background-color: hsl(var(--clr-light-orange));
+}
+
+/** text */
+.text-dark {
+  color: hsl(var(--clr-dark));
+}
+
+.text-dusk {
+  color: hsl(var(--clr-dusk));
+}
+
+.text-soft-peach {
+  color: hsl(var(--clr-soft-peach));
+}
+
+.text-desert-storm {
+  color: hsl(var(--clr-desert-storm));
+}
+
+.text-crocus-purple {
+  color: hsl(var(--clr-crocus-purple));
+}
+
+.text-pinkish-purple {
+  color: hsl(var(--clr-pinkish-purple));
+}
+
+.text-light-orange {
+  color: hsl(var(--clr-light-orange));
 }
 
 /**------------------- 
@@ -66,6 +72,42 @@
 --------------------*/
 .ff-epilogue {
   font-family: 'Epilogue', sans-serif;
+}
+
+/**------------------- 
+**    FONT SIZES
+--------------------*/
+
+.fs-step--2 {
+  font-size: var(--step--2);
+}
+
+.fs-step--1 {
+  font-size: var(--step--1);
+}
+
+.fs-step-0 {
+  font-size: var(--step-0);
+}
+
+.fs-step-1 {
+  font-size: var(--step-1);
+}
+
+.fs-step-2 {
+  font-size: var(--step-2);
+}
+
+.fs-step-3 {
+  font-size: var(--step-3);
+}
+
+.fs-step-4 {
+  font-size: var(--step-4);
+}
+
+.fs-step-5 {
+  font-size: var(--step-5);
 }
 
 /**------------------- 
@@ -79,6 +121,15 @@
 }
 
 /**------------------- 
+**  HEADER STYLING
+--------------------*/
+.header--primary {
+}
+
+.header--primary span {
+}
+
+/**------------------- 
 **   LINE HEIGHTS
 --------------------*/
 
@@ -87,7 +138,7 @@
 --------------------*/
 
 /**--------------------- 
-** FOR SCREEN READERS
+**   SCREEN READERS
 ----------------------*/
 .sr-only {
   position: absolute !important;
@@ -102,18 +153,5 @@
 }
 
 /**------------------- 
-**    CONTAINER
+**     SPACING
 --------------------*/
-.container {
-  padding-inline: 1rem;
-  padding-block-start: 1.5rem;
-}
-
-/**------------------- 
-**     HEADERS
---------------------*/
-.header--primary {
-}
-
-.header--primary span {
-}
