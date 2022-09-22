@@ -1,3 +1,127 @@
 /**------------------- 
-**    CONTAINER
+**     COLOURS
 --------------------*/
+/** background */
+.bg-dark {
+  background-color: hsl(var(--clr-dark), var(--hsla));
+}
+
+.bg-dusk {
+  background-color: hsl(var(--clr-dusk), var(--hsla));
+}
+
+.bg-soft-peach {
+  background-color: hsl(var(--clr-soft-peach), var(--hsla));
+}
+
+.bg-desert-storm {
+  background-color: hsl(var(--clr-desert-storm), var(--hsla));
+}
+
+.bg-crocus-purple {
+  background-color: hsl(var(--clr-crocus-purple), var(--hsla));
+}
+
+.bg-pinkish-purple {
+  background-color: hsl(var(--clr-pinkish-purple), var(--hsla));
+}
+
+.bg-light-orange {
+  background-color: hsl(var(--clr-light-orange), var(--hsla));
+}
+
+/** text */
+.text-dark {
+  color: hsl(var(--clr-dark), var(--hsla));
+}
+
+.text-dusk {
+  color: hsl(var(--clr-dusk), var(--hsla));
+}
+
+.text-soft-peach {
+  color: hsl(var(--clr-soft-peach), var(--hsla));
+}
+
+.text-desert-storm {
+  color: hsl(var(--clr-desert-storm), var(--hsla));
+}
+
+.text-crocus-purple {
+  color: hsl(var(--clr-crocus-purple), var(--hsla));
+}
+
+.text-pinkish-purple {
+  color: hsl(var(--clr-pinkish-purple), var(--hsla));
+}
+
+.text-light-orange {
+  color: hsl(var(--clr-light-orange), var(--hsla));
+}
+
+/**------------------- 
+**  FONT FAMILIES
+--------------------*/
+.ff-epilogue {
+  font-family: var(--ff-epilogue);
+}
+
+/**------------------- 
+**     FLEX-BOX
+--------------------*/
+.flex-col {
+  --gap: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+/**------------------- 
+**   FONT WEIGHTS
+--------------------*/
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+/**------------------- 
+  **   LINE HEIGHT
+--------------------*/
+.lh-32 {
+  line-height: 2rem;
+}
+
+.lh-35 {
+  line-height: 2.1875rem;
+}
+
+.lh-26 {
+  line-height: 1.625rem;
+}
+
+.lh-56 {
+  line-height: 3.5rem;
+}
+
+.lh-78 {
+  line-height: 4.875rem;
+}
+
+/**---------------------- 
+  **   SCREEN READERS
+-----------------------*/
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}

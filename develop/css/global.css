@@ -1,0 +1,123 @@
+/* @link https://utopia.fyi/type/calculator?c=375,16,1.2,1440,18,1.23,6,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+/* @link https://utopia.fyi/space/calculator?c=375,16,1.2,1440,18,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+
+:root {
+  /* COLOURS */
+  /* COLOURS */
+  --clr-dark: 219, 43%, 16%;
+  --clr-dusk: 218, 20%, 36%;
+  --clr-soft-peach: 30, 33%, 93%;
+  --clr-desert-storm: 30, 29%, 97%;
+  --clr-crocus-purple: 264, 100%, 69%;
+  --clr-pinkish-purple: 292, 76%, 54%;
+  --clr-light-orange: 31, 100%, 65%;
+  --hsla: 1;
+
+  /* TYPE SCALE */
+  --step--2: clamp(0.69rem, calc(0.68rem + 0.07vw), 0.74rem);
+  --step--1: clamp(0.83rem, calc(0.8rem + 0.12vw), 0.91rem);
+  --step-0: clamp(1rem, calc(0.96rem + 0.19vw), 1.13rem);
+  --step-1: clamp(1.2rem, calc(1.14rem + 0.28vw), 1.38rem);
+  --step-2: clamp(1.44rem, calc(1.35rem + 0.39vw), 1.7rem);
+  --step-3: clamp(1.73rem, calc(1.6rem + 0.55vw), 2.09rem);
+  --step-4: clamp(2.07rem, calc(1.9rem + 0.75vw), 2.58rem);
+  --step-5: clamp(2.49rem, calc(2.25rem + 1.02vw), 3.17rem);
+  --step-6: clamp(2.99rem, calc(2.67rem + 1.37vw), 3.9rem);
+
+  /* FLUID SPACE SCALE */
+  --space-3xs: clamp(0.25rem, calc(0.23rem + 0.09vw), 0.31rem);
+  --space-2xs: clamp(0.5rem, calc(0.48rem + 0.09vw), 0.56rem);
+  --space-xs: clamp(0.75rem, calc(0.71rem + 0.19vw), 0.88rem);
+  --space-s: clamp(1rem, calc(0.96rem + 0.19vw), 1.13rem);
+  --space-m: clamp(1.5rem, calc(1.43rem + 0.28vw), 1.69rem);
+  --space-l: clamp(2rem, calc(1.91rem + 0.38vw), 2.25rem);
+  --space-xl: clamp(3rem, calc(2.87rem + 0.56vw), 3.38rem);
+  --space-2xl: clamp(4rem, calc(3.82rem + 0.75vw), 4.5rem);
+  --space-3xl: clamp(6rem, calc(5.74rem + 1.13vw), 6.75rem);
+  --space-4xl: clamp(7rem, calc(6.69rem + 1.31vw), 7.88rem);
+  --space-5xl: clamp(8rem, calc(7.65rem + 1.5vw), 9rem);
+  --space-6xl: clamp(9rem, calc(8.6rem + 1.69vw), 10.13rem);
+
+  /* One-up pairs */
+  --space-3xs-2xs: clamp(0.25rem, calc(0.14rem + 0.47vw), 0.56rem);
+  --space-2xs-xs: clamp(0.5rem, calc(0.37rem + 0.56vw), 0.88rem);
+  --space-xs-s: clamp(0.75rem, calc(0.62rem + 0.56vw), 1.13rem);
+  --space-s-m: clamp(1rem, calc(0.76rem + 1.03vw), 1.69rem);
+  --space-m-l: clamp(1.5rem, calc(1.24rem + 1.13vw), 2.25rem);
+  --space-l-xl: clamp(2rem, calc(1.52rem + 2.07vw), 3.38rem);
+  --space-xl-2xl: clamp(3rem, calc(2.47rem + 2.25vw), 4.5rem);
+  --space-2xl-3xl: clamp(4rem, calc(3.03rem + 4.13vw), 6.75rem);
+  --space-3xl-4xl: clamp(6rem, calc(5.34rem + 2.82vw), 7.88rem);
+  --space-4xl-5xl: clamp(7rem, calc(6.3rem + 3vw), 9rem);
+  --space-5xl-6xl: clamp(8rem, calc(7.25rem + 3.19vw), 10.13rem);
+
+  /* Custom pairs */
+  --space-s-6xl: clamp(1rem, calc(-2.21rem + 13.71vw), 10.13rem);
+  --space-m-xl: clamp(1.5rem, calc(0.84rem + 2.82vw), 3.38rem);
+
+  /* FONT FAMILY */
+  --ff-epilogue: 'Epilogue', sans-serif;
+
+  /* FONT WEIGHT */
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+body {
+  background-color: hsl(var(--clr-desert-storm));
+  font-family: var(--ff-epilogue);
+}
+
+h1,
+h2,
+h4 {
+  font-weight: var(--fw-regular);
+}
+
+h4,
+button,
+footer {
+  font-size: 1rem;
+}
+
+/* this required a custom value since on mobile its smaller than the h2 but on desktop its much larger thus I couldn't get it to fit within the type-scale */
+h1 {
+  font-size: clamp(1rem, -0.232394366197183rem + 5.258215962441314vw, 4.5rem);
+}
+
+h2 {
+  font-size: var(--step-5);
+}
+
+p {
+  font-size: var(--step-0);
+}
+
+q {
+  font-size: var(--step-1);
+}
+
+h3 {
+  font-size: 1.125rem;
+}
+
+/**------------------------------------------------------------- 
+**                      COMPONENTS
+--------------------------------------------------------------*/
+/*&------------------- 
+**     BUTTON
+--------------------*/
+.btn {
+  background-color: transparent;
+  border: 1px solid hsl(var(--clr-dark));
+  border-radius: 6px;
+  color: hsl(var(--clr-dark));
+  cursor: pointer;
+  font-weight: var(--fw-bold);
+  padding: 0.8em 0.2em;
+}
+
+.btn:hover {
+  background-color: hsl(var(--clr-dark));
+  color: hsl(var(--clr-desert-storm));
+}
