@@ -5,11 +5,13 @@
   --measure: 69.3031rem;
   --gutters: var(--space-s-6xl);
 
-  flex-direction: row;
+  display: flex;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
 
   margin-top: var(--space-m-xl);
+  margin-inline: 0;
 }
 
 @media only screen and (max-width: 18.3125rem) {
@@ -24,5 +26,45 @@
   .logo img {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+/**------------------ 
+**      HERO
+-------------------*/
+.hero {
+  --measure: 69.375rem;
+  --gutters: var(--space-s-6xl);
+}
+
+/*?------------------ 
+**   HERO INFO
+-------------------*/
+.hero__info {
+  --gap: var(--step-4);
+
+  align-items: flex-start;
+}
+
+.hero__info .image--curved {
+  position: relative;
+}
+
+.hero__info .image--curved::before {
+  position: absolute;
+  bottom: var(--space-xl-2xl);
+  left: 0;
+
+  content: '';
+  background-image: url('../build/assets/images/pattern-curved-line-1.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 0.6em;
+  width: 4.3em;
+}
+
+@media only screen and (max-width: 21.5625rem) {
+  .hero__info .image--curved::before {
+    display: none;
   }
 }

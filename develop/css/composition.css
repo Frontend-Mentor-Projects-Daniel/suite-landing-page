@@ -8,9 +8,6 @@
   max-inline-size: var(--measure);
   padding-inline-start: var(--gutters, 0);
   padding-inline-end: var(--gutters, 0);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 /**--------------------- 
