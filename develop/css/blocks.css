@@ -122,6 +122,25 @@
 }
 
 /*?------------------ 
+**   HERO IMAGE
+-------------------*/
+.hero__image {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.hero__image img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 48em) {
+  .hero__image img {
+    width: auto;
+  }
+}
+
+/*?------------------ 
 **   HERO STATS
 -------------------*/
 .hero__statistics {
@@ -131,6 +150,7 @@
 
 .hero__statistics span {
   font-size: 3rem;
+  letter-spacing: 0;
 }
 
 @media only screen and (min-width: 90em) {
