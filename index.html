@@ -24,7 +24,7 @@
 
     <title>Frontend Mentor | Suite landing page</title>
   </head>
-  <body class="[ stack ]">
+  <body>
     <header class="[ header ] [ center ]">
       <div class="[ logo ]">
         <img src="./develop/build/assets/images/logo.svg" alt="suite" />
@@ -33,7 +33,7 @@
     </header>
 
     <main class="[ main ]">
-      <div class="[ hero ] [ center ]">
+      <div class="[ hero ] [ center ] [ flex-col ]">
         <div class="[ hero__info ] [ flex-col ]">
           <h1>
             A
@@ -47,6 +47,23 @@
             get more leads for your company.
           </p>
           <button data-type="large" class="btn">Request Beta Access</button>
+        </div>
+
+        <div class="[ hero__image ]">
+          <picture>
+            <source
+              srcset="./develop/build/assets/images/image-hero-portrait.png"
+              media="(min-width: 48em)"
+            />
+            <source
+              srcset="./develop/build/assets/images/image-hero-landscape.png"
+              media="(min-width: 23.4375em)"
+            />
+            <img
+              src="./develop/build/assets/images/image-hero-portrait.png"
+              alt=""
+            />
+          </picture>
         </div>
       </div>
     </main>

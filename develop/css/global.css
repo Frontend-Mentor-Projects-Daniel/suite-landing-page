@@ -66,8 +66,6 @@
 }
 
 body {
-  --space: 3.5625rem;
-
   background-color: hsl(var(--clr-desert-storm));
   font-family: var(--ff-epilogue);
 }
