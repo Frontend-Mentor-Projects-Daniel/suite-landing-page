@@ -53,15 +53,13 @@
 **      HERO
 -------------------*/
 .hero {
-  /* --measure: 69.375rem;
-  --gutters: var(--space-s-6xl);
-  --gap: 3.4375rem; */
   --grid-gap: 3.4375rem;
   --minimum: 23.4375rem;
 }
 @media only screen and (min-width: 48em) {
   .hero {
     --grid-gap: 0;
+    row-gap: 5.5rem;
   }
 
   .hero > .hero__info {
@@ -76,13 +74,18 @@
     grid-column: 2 / 3;
     grid-row: 1/2;
   }
+
+  .hero > .hero__statistics {
+    grid-column: 1 / 3;
+    grid-row: 2/3;
+  }
 }
 
-@media only screen and (min-width: 48em) {
-  .hero {
-    flex-direction: row;
-
-    position: relative;
+@media only screen and (min-width: 90em) {
+  .hero > .hero__statistics {
+    grid-column: 3 / 4;
+    grid-row: 1/2;
+    align-self: center;
   }
 }
 
@@ -94,16 +97,6 @@
 
   align-items: flex-start;
 }
-
-/* .hero__info::after {
-  content: '';
-  background-image: url('../build/assets/images/image-hero-landscape.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-
-  height: 21.4375rem;
-  width: 13.75rem;
-} */
 
 .hero__info .image--curved {
   position: relative;
@@ -128,20 +121,21 @@
   }
 }
 
-/* @media only screen and (min-width: 48em) {
-  .hero__info::after {
-    background-image: url('../build/assets/images/image-hero-portrait.png');
-  }
-} */
-
 /*?------------------ 
-**   HERO IMAGE
+**   HERO STATS
 -------------------*/
-@media only screen and (min-width: 48em) {
-  /* .hero__image {
-    position: absolute;
-    top: -37px;
-    right: 59px;
-    z-index: -99;
-  } */
+.hero__statistics {
+  justify-content: space-between;
+  gap: 3.75rem;
+}
+
+.hero__statistics span {
+  font-size: 3rem;
+}
+
+@media only screen and (min-width: 90em) {
+  .hero__statistics {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 }

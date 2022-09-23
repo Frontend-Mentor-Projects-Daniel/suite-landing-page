@@ -1,4 +1,15 @@
 /**------------------- 
+**   ALIGNMENTS
+--------------------*/
+.t-align-center {
+  text-align: center;
+}
+
+.t-align-start {
+  text-align: start;
+}
+
+/**------------------- 
 **     COLOURS
 --------------------*/
 /** background */
@@ -60,6 +71,13 @@
 }
 
 /**------------------- 
+**     DISPLAY
+--------------------*/
+.d-block {
+  display: block;
+}
+
+/**------------------- 
 **  FONT FAMILIES
 --------------------*/
 .ff-epilogue {
@@ -112,7 +130,7 @@
 }
 
 /**---------------------- 
-  **   SCREEN READERS
+**   SCREEN READERS
 -----------------------*/
 .sr-only {
   position: absolute !important;
@@ -124,4 +142,11 @@
   clip: rect(0, 0, 0, 0) !important;
   white-space: nowrap !important;
   border: 0 !important;
+}
+
+/**---------------------- 
+**   TEXT TRANSFORMS
+-----------------------*/
+.tt-uppercase {
+  text-transform: uppercase;
 }

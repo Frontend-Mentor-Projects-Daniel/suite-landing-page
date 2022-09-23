@@ -75,7 +75,7 @@
 
 .switcher > * {
   flex-grow: 1;
-  flex-basis: calc((48rem - 100%) * 999);
+  flex-basis: calc((var(--threshold, 36rem) - 100%) * 999);
 }
 
 .switcher > :nth-last-child(n + 4),
