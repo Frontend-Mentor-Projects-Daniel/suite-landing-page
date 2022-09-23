@@ -70,9 +70,11 @@ body {
   font-family: var(--ff-epilogue);
 }
 
+/* if your headers aren't in sequentially descending order, you will get accessibility warnings! thus heading-sm will be used to help fix that */
 h1,
 h2,
-h4 {
+h4,
+.heading--sm {
   font-weight: var(--fw-regular);
 }
 
