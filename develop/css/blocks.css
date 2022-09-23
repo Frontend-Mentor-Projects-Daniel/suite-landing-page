@@ -100,17 +100,17 @@
   width: 4.3em;
 }
 
-/* @media only screen and (max-width: 21.5625rem) {
+@media only screen and (max-width: 21.5625rem) {
   .hero__info .image--curved::before {
     display: none;
   }
-} */
+}
 
-@media only screen and (min-width: 48em) {
+/* @media only screen and (min-width: 48em) {
   .hero__info::after {
     background-image: url('../build/assets/images/image-hero-portrait.png');
   }
-}
+} */
 
 /*?------------------ 
 **   HERO IMAGE
