@@ -11,6 +11,23 @@
 }
 
 /**--------------------- 
+**    COMMON GRID
+----------------------*/
+.grid {
+  display: grid;
+  grid-gap: var(--grid-gap, 1rem);
+}
+
+@supports (width: min(250px, 100%)) {
+  .grid {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(min(var(--minimum, 250px), 100%), 1fr)
+    );
+  }
+}
+
+/**--------------------- 
 **  CROPPING MEDIA
 ----------------------*/
 .frame {
