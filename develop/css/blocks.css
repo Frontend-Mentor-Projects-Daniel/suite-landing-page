@@ -213,6 +213,29 @@
 }
 
 /*?------------------ 
+**    IMAGES
+-------------------*/
+.image--person {
+  position: relative;
+}
+
+.image--blur {
+  display: none;
+}
+
+@media only screen and (min-width: 48rem) {
+  .image--blur {
+    display: inline-block;
+
+    position: absolute;
+    top: 11rem;
+    right: -50%;
+    left: -26%;
+    z-index: -10;
+  }
+}
+
+/*?------------------ 
 **   TESTIMONIAL
 -------------------*/
 .testimonial {
