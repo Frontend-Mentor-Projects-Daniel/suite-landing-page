@@ -185,9 +185,9 @@
 }
 
 /*?------------------ 
-**   BACKGROUNDS
+**   BACKGROUND
 -------------------*/
-.background--1 {
+.section .background--1 {
   position: absolute;
   top: 10.625rem;
   right: 0;
@@ -198,14 +198,14 @@
   border-radius: 15px;
 }
 @media only screen and (min-width: 48rem) {
-  .background--1 {
+  .section .background--1 {
     top: 15.925rem;
 
     margin-inline: 40px;
   }
 }
 @media only screen and (min-width: 90rem) {
-  .background--1 {
+  .section .background--1 {
     top: 2.925rem;
 
     margin-inline: 0;
@@ -255,4 +255,68 @@
     margin-left: 0;
     margin-right: 0;
   }
+}
+
+/**------------------ 
+**     FOOTER
+-------------------*/
+.footer {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90rem;
+  padding-bottom: 4.5rem;
+  padding-top: var(--space-xl-2xl);
+  position: relative;
+}
+
+/*?------------------ 
+**   BACKGROUND
+-------------------*/
+.footer .background--2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -101;
+}
+
+@media only screen and (min-width: 48rem) {
+  .footer .background--2 {
+    top: -29.0625rem;
+  }
+}
+
+@media only screen and (min-width: 90rem) {
+  .footer .background--2 {
+    top: -17.762rem;
+  }
+}
+
+/*?------------------ 
+**  FOOTER CONTENT
+-------------------*/
+.footer__content {
+  align-items: center;
+  gap: 2.0625rem;
+}
+
+@media only screen and (min-width: 48em) {
+  .footer__content {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+/*?-------------------- 
+** SOCIAL MEDIA ICONS
+---------------------*/
+.social-media-icons {
+  display: flex;
+  gap: 1.75rem;
+}
+
+.social-media-icons .icon img:hover {
+  cursor: pointer;
+  opacity: 0.5;
 }

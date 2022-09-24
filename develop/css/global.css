@@ -80,11 +80,6 @@ h4,
   font-weight: var(--fw-regular);
 }
 
-h4,
-footer {
-  font-size: 1rem;
-}
-
 /* this required a custom value since on mobile its smaller than the h2 but on desktop its much larger thus I couldn't get it to fit within the type-scale */
 h1 {
   font-size: clamp(
@@ -97,6 +92,14 @@ h1 {
 
 h2 {
   font-size: var(--step-5);
+}
+
+h3 {
+  font-size: 1.125rem;
+}
+
+h4 {
+  font-size: 1rem;
 }
 
 p {
@@ -113,16 +116,16 @@ q {
   font-size: var(--step-1);
 }
 
-h3 {
-  font-size: 1.125rem;
-}
-
 button {
   font-size: clamp(
     0.875rem,
     0.8309859154929577rem + 0.18779342723004694vw,
     1rem
   );
+}
+
+footer {
+  font-size: 0.9375rem;
 }
 
 /**------------------------------------------------------------- 
