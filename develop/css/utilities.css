@@ -9,6 +9,11 @@
   text-align: start;
 }
 
+.m-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /**------------------- 
 **     COLOURS
 --------------------*/
@@ -96,13 +101,6 @@
 }
 
 /**------------------- 
-**  LETTER SPACING
---------------------*/
-.ls-250 {
-  letter-spacing: 2.5px;
-}
-
-/**------------------- 
 **   FONT WEIGHTS
 --------------------*/
 .fw-regular {
@@ -111,6 +109,13 @@
 
 .fw-bold {
   font-weight: var(--fw-bold);
+}
+
+/**------------------- 
+**  LETTER SPACING
+--------------------*/
+.ls-250 {
+  letter-spacing: 2.5px;
 }
 
 /**------------------- 

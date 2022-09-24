@@ -53,9 +53,11 @@
 
   /* Custom pairs */
   --space-s-6xl: clamp(1rem, calc(-2.21rem + 13.71vw), 10.13rem);
+  --space-s-4xl: clamp(1rem, calc(-1.42rem + 10.33vw), 7.88rem);
   --space-m-xl: clamp(1.5rem, calc(0.84rem + 2.82vw), 3.38rem);
   --space-xl-2xl: clamp(3rem, calc(2.47rem + 2.25vw), 4.5rem);
   --space-xl-3xl: clamp(3rem, calc(1.68rem + 5.63vw), 6.75rem);
+  --space-xl-5xl: clamp(3rem, calc(0.89rem + 9.01vw), 9rem);
 
   /* FONT FAMILY */
   --ff-epilogue: 'Epilogue', sans-serif;
