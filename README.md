@@ -11,7 +11,7 @@ Users should be able to:
 
 ## Screenshot
 
-![screenshot](./develop/assets/images/suite-screenshot.png)
+[screenshot](./develop/build/assets/images/suite-screenshot.png)
 
 ## Links
 
