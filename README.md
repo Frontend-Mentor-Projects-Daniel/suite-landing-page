@@ -15,8 +15,7 @@ Users should be able to:
 
 ## Links
 
-- Solution URL: [Add solution URL here](https://github.com/Frontend-Mentor-Projects-Daniel/suite-landing-page)
-- Live Site URL: [Add live site URL here](https://comforting-sopapillas-ee3e45.netlify.app)
+You can view the live site [here](https://comforting-sopapillas-ee3e45.netlify.app)
 
 ## Built with
 
